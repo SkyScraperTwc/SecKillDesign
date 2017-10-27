@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scut.mybatis.mapper.impl.ConcurrentMapper">
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		insert into tbl_concurrent(name, amount) values(#{name}, #{amount})
+	</insert>
+
+	<!--&lt;!&ndash;悲观锁1，MySQL行锁&ndash;&gt;-->
+	<update id="updatePessLockInMySQL">
+		update product set stock=stock-1
+			where id=#{id} and stock>0
+	</update>
+
+	<!--悲观锁2，MySQL行锁-->
+	<!--<update id="updatePessimistic2">-->
+		<!--update tbl_concurrent set amount=amount-1-->
+			<!--where id=#{id}-->
+	<!--</update>-->
+
+	<!--乐观锁1，version=${version}-->
+	<update id="updatePositive">
+		update tbl_concurrent set amount=#{amount},version=version+1
+			where id=#{id} AND version=#{version}
+	</update>
+
+	<!--乐观锁2，${version}>version-->
+	<update id="updatePositive2">
+		update tbl_concurrent set amount=#{amount},version=#{version}
+		where id=#{id} AND #{version}>version
+	</update>
+
+</mapper>
