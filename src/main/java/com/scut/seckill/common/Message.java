@@ -16,14 +16,14 @@ public class Message<T> {
     public Message(SecKillEnum resultEnum, T body){
         this.head = new Head();
         this.head.setStatusCode(resultEnum.getCode());
-        this.head.setStatusMessage(resultEnum.getMsg());
+        this.head.setStatusMessage(resultEnum.getMessage());
         this.body = body;
     }
 
     public Message(SecKillEnum resultEnum){
         this.head = new Head();
         this.head.setStatusCode(resultEnum.getCode());
-        this.head.setStatusMessage(resultEnum.getMsg());
+        this.head.setStatusMessage(resultEnum.getMessage());
     }
 
 }

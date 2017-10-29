@@ -3,13 +3,9 @@
  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.scut.mybatis.mapper.impl.ConcurrentMapper">
+<mapper namespace="com.scut.seckill.mapper.SecKillMapper">
 
-	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
-		insert into tbl_concurrent(name, amount) values(#{name}, #{amount})
-	</insert>
-
-	<!--&lt;!&ndash;悲观锁1，MySQL行锁&ndash;&gt;-->
+	<!--悲观锁1，MySQL行锁-->
 	<update id="updatePessLockInMySQL">
 		update product set stock=stock-1
 			where id=#{id} and stock>0
@@ -32,5 +28,19 @@
 		update tbl_concurrent set amount=#{amount},version=#{version}
 		where id=#{id} AND #{version}>version
 	</update>
+
+
+	<select id="getAllUser" resultType="User">
+		select * from user
+	</select>
+
+	<select id="getAllProduct" resultType="Product">
+		select * from product
+	</select>
+
+	<insert id="insertRecord" useGeneratedKeys="true" keyProperty="id">
+		insert into record(userId, productId, state, stateInfo, createTime)
+			values(#{user.id}, #{product.id}, #{state}, #{stateInfo}, #{createTime})
+	</insert>
 
 </mapper>

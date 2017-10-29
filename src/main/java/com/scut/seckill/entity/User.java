@@ -26,5 +26,12 @@ public class User {
 	 * 手机号码
 	 */
 	private String phone;
+	/**
+	 * 创建时间
+	 */
+	private Date createTime;
 
+    public User(Integer id) {
+    	this.id = id;
+    }
 }

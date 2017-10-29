@@ -9,7 +9,7 @@ import lombok.Data;
 public class Head {
 
     /**
-     * 状态码，0成功，1系统异常，2参数异常
+     * 状态码
      */
     private String statusCode;
 

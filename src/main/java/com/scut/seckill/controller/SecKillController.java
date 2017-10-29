@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
-@RequestMapping("seckill")
+@RequestMapping("/seckill")
 @RestController
 public class SecKillController {
 
@@ -21,10 +21,16 @@ public class SecKillController {
     @RequestMapping(value = "/pessLockInMySQL",method = RequestMethod.POST)
     public Message<SecKillResponse> pessLockInMySQL(@RequestBody Message<SecKillRequest> requestMessage){
         Map<String, Object> paramMap = new HashMap<>();
-        paramMap.put("username",requestMessage.getBody().getUsername());
+        paramMap.put("userId",requestMessage.getBody().getUserId());
         paramMap.put("productId",requestMessage.getBody().getProductId());
         SecKillEnum secKillEnum = secKillService.handleByPessLockInMySQL(paramMap);
-        Message<SecKillResponse> responseMessage = new Message<>(secKillEnum,new SecKillResponse());
+        Message<SecKillResponse> responseMessage = new Message<>(secKillEnum,null);
         return responseMessage;
+    }
+
+    @RequestMapping(value = "/test",method = RequestMethod.POST)
+    public String test(@RequestBody Message<SecKillRequest> requestMessage){
+        System.out.println(requestMessage.getBody().getUserId()+","+requestMessage.getBody().getProductId());
+        return "success";
     }
 }

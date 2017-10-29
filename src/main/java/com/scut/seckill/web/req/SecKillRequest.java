@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class SecKillRequest {
 
-    private String username;
+    private Integer userId;
 
     private Integer productId;
 }

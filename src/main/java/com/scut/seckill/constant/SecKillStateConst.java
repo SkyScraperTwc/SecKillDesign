@@ -1,8 +1,5 @@
 package com.scut.seckill.constant;
 
-/**
- * 返回常量
- */
 public final class SecKillStateConst {
     /**
      * 秒杀成功

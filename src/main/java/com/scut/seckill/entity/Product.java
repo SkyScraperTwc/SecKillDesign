@@ -11,7 +11,6 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
-	
 	/**
 	 * id
 	 */
@@ -19,7 +18,7 @@ public class Product {
 	/**
 	 * 产品名称 
 	 */
-	private String name;
+	private String productName;
 	/**
 	 * 价格
 	 */
@@ -28,6 +27,10 @@ public class Product {
 	 * 库存
 	 */
 	private Integer stock;
+	/**
+	 * 创建时间
+	 */
+	private Date createTime;
 
 	public Product(Integer id){
 		this.id = id;

@@ -17,9 +17,6 @@ import java.sql.SQLException;
 @Slf4j
 public class MyBatisConfig {
 
-    /**
-     * datasource
-     */
     @Value("${spring.datasource.url}")
     private String dbUrl;
 

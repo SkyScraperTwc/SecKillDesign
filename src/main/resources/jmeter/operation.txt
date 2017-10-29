@@ -1,0 +1,7 @@
+{
+	"head":{},
+	"body":{
+		"userId":${userId},
+		"productId":${productId}
+		}
+	}
