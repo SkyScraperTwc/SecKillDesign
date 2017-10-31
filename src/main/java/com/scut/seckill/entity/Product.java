@@ -26,7 +26,11 @@ public class Product {
 	/**
 	 * 库存
 	 */
-	private Integer stock;
+	private int stock;
+	/**
+	 * 版本号
+	 */
+	private int version;
 	/**
 	 * 创建时间
 	 */

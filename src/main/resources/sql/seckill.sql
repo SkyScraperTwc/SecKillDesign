@@ -30,3 +30,5 @@ CREATE TABLE record(
 -- use seckill;
 -- update product set stock=100 where id>=1;
 -- delete from record where id>=0
+
+-- update product set stock=100 and version=0 where id>=1 ;

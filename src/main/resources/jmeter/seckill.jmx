@@ -27,7 +27,7 @@
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">3000</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <longProp name="ThreadGroup.start_time">1502101593000</longProp>
         <longProp name="ThreadGroup.end_time">1502101593000</longProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
@@ -58,7 +58,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-          <stringProp name="HTTPSampler.path">/SecKillDesign/seckill/pessLockInMySQL</stringProp>
+          <stringProp name="HTTPSampler.path">/SecKillDesign/seckill/baseOnRedisWatch</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>

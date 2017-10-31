@@ -28,11 +28,13 @@ public class RedisLoaderListener {
     @PostConstruct
     public void initRedis(){
         Jedis jedis = redisCacheHandle.getJedis();
+        //清空Redis缓存
+        jedis.flushDB();
         List<Product> productList = secKillMapper.getAllProduct();
         for (Product product:productList) {
-            Map<String, String> map = JSON.parseObject(JSON.toJSONString(product), new TypeReference<Map<String, String>>(){});
-            jedis.hmset("product_"+product.getId(),map);
+            jedis.set("product_"+product.getId(),product.getProductName());
+            jedis.set(product.getProductName()+"_stock", String.valueOf(product.getStock()));
         }
-        log.info("Redis数据初始化完毕！");
+        log.info("Redis缓存数据初始化完毕！");
     }
 }

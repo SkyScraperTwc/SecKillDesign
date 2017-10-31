@@ -12,6 +12,7 @@ public enum SecKillEnum {
      * 服务级错误
      */
     SUCCESS(SecKillStateConst.SUCCESS,"秒杀成功"),
+    LOW_STOCKS(SecKillStateConst.FAIL, "库存不足"),
     FAIL(SecKillStateConst.FAIL, "秒杀失败"),
     REPEAT(SecKillStateConst.REPEAT, "重复秒杀"),
     SYSTEM_EXCEPTION(SecKillStateConst.SYSTEM_EXCEPTION, "系统错误"),

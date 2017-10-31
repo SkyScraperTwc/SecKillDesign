@@ -1,7 +1,10 @@
 package com.scut.seckill;
 
+import com.alibaba.fastjson.JSON;
 import com.scut.seckill.cache.RedisCacheHandle;
+import com.scut.seckill.common.SecKillEnum;
 import com.scut.seckill.constant.RedisCacheConst;
+import com.scut.seckill.entity.Record;
 import com.scut.seckill.entity.User;
 import com.scut.seckill.mapper.SecKillMapper;
 import com.scut.seckill.utils.SecKillUtils;
@@ -10,16 +13,18 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.Response;
+import redis.clients.jedis.Transaction;
 import sun.rmi.runtime.Log;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -31,10 +36,12 @@ public class JUnitTest {
     @Autowired
     private RedisCacheHandle redisCacheHandle;
 
+    private Set<String> set = new TreeSet<>();
+
     @Test
     public void test2() throws InterruptedException {
         Jedis jedis = redisCacheHandle.getJedis();
-        boolean isBuy = jedis.sismember(RedisCacheConst.IPHONE_HAS_BUY_SET, "1");
+        boolean isBuy = jedis.sismember(RedisCacheConst.IPHONE_HAS_BOUGHT_SET, "1");
         System.out.println(isBuy);
     }
 
@@ -78,10 +85,28 @@ public class JUnitTest {
     @Test
     public void test4() throws InterruptedException {
         Jedis jedis = redisCacheHandle.getJedis();
-        boolean isBuy = jedis.sismember("iphone_has_buy_set", "1");
-        System.out.println(isBuy);
-        long result = jedis.sadd("iphone_has_buy_set", "2");
-        System.out.println(result);
+        Transaction tx = jedis.multi();
 
+        Response<Boolean> isBuy = tx.sismember("set", "2");
+        System.out.println("isBuy------"+isBuy);
+
+        Response<Long> decrResult = tx.hincrBy("product_1","stock",-1);
+        System.out.println("decrResult------"+decrResult);
+
+        tx.sadd("set","1");
+
+        List<Object> resultList = tx.exec();
+        System.out.println("-----------");
+        System.out.println(Boolean.valueOf(resultList.get(0).toString()));
+        System.out.println( Integer.parseInt(resultList.get(1).toString()));
+        System.out.println( Integer.parseInt(resultList.get(2).toString()));
+    }
+
+
+    @Test
+    public void test5() throws InterruptedException {
+        User user = new User(1);
+        String json = JSON.toJSONString(user);
+        System.out.println(json);
     }
 }

@@ -5,30 +5,19 @@
 
 <mapper namespace="com.scut.seckill.mapper.SecKillMapper">
 
-	<!--悲观锁1，MySQL行锁-->
 	<update id="updatePessLockInMySQL">
 		update product set stock=stock-1
 			where id=#{id} and stock>0
 	</update>
 
-	<!--悲观锁2，MySQL行锁-->
-	<!--<update id="updatePessimistic2">-->
-		<!--update tbl_concurrent set amount=amount-1-->
-			<!--where id=#{id}-->
-	<!--</update>-->
-
-	<!--乐观锁1，version=${version}-->
-	<update id="updatePositive">
-		update tbl_concurrent set amount=#{amount},version=version+1
+	<update id="updatePosiLockInMySQL">
+		update product set stock=#{stock},version=version+1
 			where id=#{id} AND version=#{version}
 	</update>
 
-	<!--乐观锁2，${version}>version-->
-	<update id="updatePositive2">
-		update tbl_concurrent set amount=#{amount},version=#{version}
-		where id=#{id} AND #{version}>version
+	<update id="updateByAsynPattern">
+		update product set stock=#{stock} where id=#{id}
 	</update>
-
 
 	<select id="getAllUser" resultType="User">
 		select * from user
@@ -36,6 +25,10 @@
 
 	<select id="getAllProduct" resultType="Product">
 		select * from product
+	</select>
+
+	<select id="getProductById" resultType="Product">
+		select * from product WHERE id=#{id}
 	</select>
 
 	<insert id="insertRecord" useGeneratedKeys="true" keyProperty="id">
