@@ -182,7 +182,6 @@ public class SecKillService {
         long addResult = jedis.sadd(hasBoughtSetKey,user.getId().toString());
         if (addResult>0){
             Product product = new Product(productId);
-            product.setStock(Integer.parseInt(resultList.get(0).toString()));
             //秒杀成功
             record =  new Record(null,user,product,SecKillEnum.SUCCESS.getCode(),SecKillEnum.SUCCESS.getMessage(),new Date());
             //添加record到rabbitMQ消息队列

@@ -2,42 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f07bd27-39cb-4e64-9ec9-e8fdc247f4d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_3_6_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_http_client_1_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_6_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_6_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_1_4_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/config/RabbitmqCallBackConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/constant/RabbitMQPropertyConst.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQReceiver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_1.png" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_2.png" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_3.png" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis/result_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis/result_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis/result_3.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SecKillDesign.iml" afterPath="$PROJECT_DIR$/SecKillDesign.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/cache/RedisLoaderListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/cache/RedisLoaderListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/common/SecKillEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/common/SecKillEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/constant/RedisCacheConst.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/constant/RedisCacheConst.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/controller/SecKillController.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/controller/SecKillController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/entity/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/entity/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/mapper/SecKillMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/mapper/SecKillMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/utils/SecKillUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/utils/SecKillUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dao/SecKillMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/dao/SecKillMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jmeter/seckill.jmx" afterPath="$PROJECT_DIR$/src/main/resources/jmeter/seckill.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sql/seckill.sql" afterPath="$PROJECT_DIR$/src/main/resources/sql/seckill.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/JUnitTest.java" afterPath="$PROJECT_DIR$/src/test/java/JUnitTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,100 +30,16 @@
     <expand />
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="RabbitMQReceiver.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQReceiver.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="414">
-                    <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="SecKillMapper.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mapper/SecKillMapper.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="126">
-                    <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="RabbitMQSender.java" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="216">
-                    <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RabbitmqCallBackConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/config/RabbitmqCallBackConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2395#2396#0" expanded="true" />
-                <element signature="e#2450#2451#0" expanded="true" />
-                <element signature="e#2487#2488#0" expanded="true" />
-                <element signature="e#2530#2531#0" expanded="true" />
-                <element signature="e#2571#2572#0" expanded="true" />
-                <element signature="e#2661#2662#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecKillService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SecKillService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3420">
-              <caret line="190" column="15" lean-forward="false" selection-start-line="190" selection-start-column="15" selection-end-line="190" selection-end-column="15" />
+            <state relative-caret-position="346">
+              <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisLoaderListener.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/cache/RedisLoaderListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisCacheHandle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/cache/RedisCacheHandle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -189,6 +76,7 @@
       <find>hget</find>
       <find>product_</find>
       <find>new</find>
+      <find>updateByAsynPattern</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -248,11 +136,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/CallBackSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/CallBackReceiver.java" />
         <option value="$PROJECT_DIR$/src/test/java/JUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dao/SecKillMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/mapper/SecKillMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dao/SecKillMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java" />
       </list>
     </option>
   </component>
@@ -297,10 +185,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1913" />
-    <option name="y" value="-1" />
-    <option name="width" value="1934" />
-    <option name="height" value="1088" />
+    <option name="x" value="1970" />
+    <option name="y" value="189" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -558,6 +446,15 @@
               <item name="SecKillDesign" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecKillDesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="stress_test_result" type="462c0819:PsiDirectoryNode" />
+              <item name="posiLockInRedis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SecKillDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecKillDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -601,11 +498,11 @@
       <recent name="com.scut.seckill.cache.load" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis" />
       <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result" />
       <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL" />
       <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL" />
       <recent name="$PROJECT_DIR$/src/main/resources/jmeter" />
-      <recent name="$PROJECT_DIR$/src/main/resources/sql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -854,7 +751,7 @@
       <workItem from="1509158891084" duration="5531000" />
       <workItem from="1509164701889" duration="11928000" />
       <workItem from="1509243041342" duration="31986000" />
-      <workItem from="1509414370866" duration="6499000" />
+      <workItem from="1509414370866" duration="8467000" />
     </task>
     <task id="LOCAL-00001" summary="完成基于MySQL的悲观锁高并发操作，并利用JMeter进行相应的压测">
       <created>1509252465270</created>
@@ -863,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509252465270</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.基于MySQL的乐观锁（添加version字段），完成高并发压测。&#10;2.基于Redis的watch和decr操作，完成高并发库存递减，异步写入MySQL数据库，并进行相应的压测。">
+      <created>1509435266220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509435266220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -899,7 +803,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117277000" />
+    <option name="totallyTimeSpent" value="119245000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -928,7 +832,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32878152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.185836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19062833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -953,7 +857,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成基于MySQL的悲观锁高并发操作，并利用JMeter进行相应的压测" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成基于MySQL的悲观锁高并发操作，并利用JMeter进行相应的压测" />
+    <MESSAGE value="完成基于MySQL的乐观锁（添加version字段）操作，并利用JMeter进行相应的压测" />
+    <MESSAGE value="1.基于MySQL的乐观锁（添加version字段），完成高并发压测。&#10;2.基于Redis的watch和decr操作，完成高并发库存递减，异步写入MySQL数据库，并进行相应的压测。" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.基于MySQL的乐观锁（添加version字段），完成高并发压测。&#10;2.基于Redis的watch和decr操作，完成高并发库存递减，异步写入MySQL数据库，并进行相应的压测。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -962,20 +868,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.8.1/jedis-2.8.1.jar!/redis/clients/jedis/BinaryJedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="690" column="19" lean-forward="false" selection-start-line="690" selection-start-column="19" selection-end-line="690" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.8.1/jedis-2.8.1.jar!/redis/clients/jedis/Jedis.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="431" column="31" lean-forward="false" selection-start-line="431" selection-start-column="31" selection-end-line="431" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/SecKillApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1019,6 +911,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,6 +982,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="1000" column="72" lean-forward="false" selection-start-line="1000" selection-start-column="72" selection-end-line="1000" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,36 +1023,6 @@
           <caret line="224" column="12" lean-forward="false" selection-start-line="224" selection-start-column="12" selection-end-line="224" selection-end-column="12" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.8.1/jedis-2.8.1.jar!/redis/clients/jedis/PipelineBase.class">
@@ -1264,33 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/SecKillMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <marker date="1509434593798" expanded="true" signature="250:312" ph="update tbl_c... " />
-            <marker date="1509434593798" expanded="true" signature="364:456" ph="update tbl_c... " />
-            <marker date="1509434593798" expanded="true" signature="506:554" ph="update produ... " />
-            <marker date="1509434593798" expanded="true" signature="613:627" ph="select * fro... tbl_employee" />
-            <marker date="1509434593798" expanded="true" signature="613:631" ph="select * fro... user" />
-            <marker date="1509434593798" expanded="true" signature="696:717" ph="select * fro... product" />
-            <marker date="1509434593798" expanded="true" signature="783:819" ph="select * fro... product" />
-            <marker date="1509434593798" expanded="true" signature="903:1046" ph="insert into record... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/JUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -1299,12 +1136,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/exception/SecKillException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3420">
-          <caret line="190" column="15" lean-forward="false" selection-start-line="190" selection-start-column="15" selection-end-line="190" selection-end-column="15" />
+        <state relative-caret-position="162">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#256#257#0" expanded="false" />
+            <element signature="e#302#303#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mapper/SecKillMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/config/RabbitmqCallBackConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="68" column="43" lean-forward="true" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2395#2396#0" expanded="false" />
+            <element signature="e#2450#2451#0" expanded="false" />
+            <element signature="e#2487#2488#0" expanded="false" />
+            <element signature="e#2530#2531#0" expanded="false" />
+            <element signature="e#2571#2572#0" expanded="false" />
+            <element signature="e#2661#2662#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="45" lean-forward="false" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1317,58 +1191,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/exception/SecKillException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mapper/SecKillMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/config/RabbitmqCallBackConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-            <element signature="e#2450#2451#0" expanded="true" />
-            <element signature="e#2487#2488#0" expanded="true" />
-            <element signature="e#2530#2531#0" expanded="true" />
-            <element signature="e#2571#2572#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/cache/RedisLoaderListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/mq/RabbitMQSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dao/SecKillMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1509435562546" expanded="true" signature="250:312" ph="update tbl_c... " />
+            <marker date="1509435562546" expanded="true" signature="364:456" ph="update tbl_c... " />
+            <marker date="1509435562546" expanded="true" signature="506:553" ph="update produ... " />
+            <marker date="1509435562546" expanded="true" signature="612:626" ph="select * fro... tbl_employee" />
+            <marker date="1509435562546" expanded="true" signature="612:630" ph="select * fro... user" />
+            <marker date="1509435562546" expanded="true" signature="695:716" ph="select * fro... product" />
+            <marker date="1509435562546" expanded="true" signature="782:818" ph="select * fro... product" />
+            <marker date="1509435562546" expanded="true" signature="902:1045" ph="insert into record... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInMySQL/result_3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis/result_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis/result_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL/result_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

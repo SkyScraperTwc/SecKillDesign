@@ -28,7 +28,7 @@ public class RabbitMQSender implements  RabbitTemplate.ConfirmCallback{
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
         log.info("callbakck confirm: " + correlationData.getId());
         if (ack){
-            log.info("插入record成功");
+            log.info("插入record成功，更改库存成功");
         }else{
             log.info("cause:"+cause);
         }

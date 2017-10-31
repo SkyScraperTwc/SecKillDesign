@@ -16,7 +16,7 @@
 	</update>
 
 	<update id="updateByAsynPattern">
-		update product set stock=#{stock} where id=#{id}
+		update product set stock=stock-1 where id=#{id}
 	</update>
 
 	<select id="getAllUser" resultType="User">
