@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f07bd27-39cb-4e64-9ec9-e8fdc247f4d6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/constant/RabbitMQPropertyConst.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jmeter/data-config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jmeter/origin.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/cache/RedisLoaderListener.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/cache/RedisLoaderListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/constant/RedisCacheConst.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/constant/RedisCacheConst.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java" afterPath="$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jmeter/seckill.jmx" afterPath="$PROJECT_DIR$/src/main/resources/jmeter/seckill.jmx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sql/insert.sql" afterPath="$PROJECT_DIR$/src/main/resources/sql/insert.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/JUnitTest.java" afterPath="$PROJECT_DIR$/src/test/java/JUnitTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,15 +29,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="306">
-                <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="param-repeat.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jmeter/param-repeat.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="param.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jmeter/param.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="2952" column="5" lean-forward="true" selection-start-line="2952" selection-start-column="5" selection-end-line="2952" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,6 +55,19 @@
             <state relative-caret-position="1370">
               <caret line="196" column="5" lean-forward="true" selection-start-line="141" selection-start-column="3" selection-end-line="196" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="326">
+                <caret line="176" column="44" lean-forward="true" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -479,15 +493,13 @@
     <property name="SearchEverywhereHistoryKey" value="proxy&#9;PSI&#9;JAVA://java.lang.reflect.Proxy" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/jmeter" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/jmeter" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis" />
-      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result" />
-      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.scut.seckill.constant" />
@@ -496,10 +508,12 @@
       <recent name="com.scut.seckill.cache" />
       <recent name="com.scut.seckill.cache.load" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/jmeter" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/posiLockInRedis" />
+      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result" />
+      <recent name="$PROJECT_DIR$/src/main/resources/stress_test_result/pessLockInMySQL" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -756,7 +770,7 @@
       <workItem from="1509618722183" duration="4812000" />
       <workItem from="1509681088971" duration="659000" />
       <workItem from="1509855361977" duration="2801000" />
-      <workItem from="1509958908262" duration="3602000" />
+      <workItem from="1509958908262" duration="5454000" />
     </task>
     <task id="LOCAL-00001" summary="完成基于MySQL的悲观锁高并发操作，并利用JMeter进行相应的压测">
       <created>1509252465270</created>
@@ -779,7 +793,21 @@
       <option name="project" value="LOCAL" />
       <updated>1509443624864</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="撰写README.MD文件">
+      <created>1509962559618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509962559618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="撰写README.MD文件">
+      <created>1509962847224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509962847226</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -815,7 +843,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136190000" />
+    <option name="totallyTimeSpent" value="138042000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -872,7 +900,8 @@
     <MESSAGE value="完成基于MySQL的乐观锁（添加version字段）操作，并利用JMeter进行相应的压测" />
     <MESSAGE value="1.基于MySQL的乐观锁（添加version字段），完成高并发压测。&#10;2.基于Redis的watch和decr操作，完成高并发库存递减，异步写入MySQL数据库，并进行相应的压测。" />
     <MESSAGE value="1.完成所有的压测并且将结果截图保存" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.完成所有的压测并且将结果截图保存" />
+    <MESSAGE value="撰写README.MD文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="撰写README.MD文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -881,13 +910,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.8.1/jedis-2.8.1.jar!/redis/clients/jedis/Response.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="75" column="36" lean-forward="false" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.4.1.RELEASE/spring-boot-autoconfigure-1.4.1.RELEASE.jar!/org/springframework/boot/autoconfigure/amqp/RabbitAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -1174,14 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jmeter/param.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="2986" column="5" lean-forward="true" selection-start-line="2986" selection-start-column="5" selection-end-line="2986" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jmeter/operation.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1223,6 +1237,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jmeter/param-repeat.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jmeter/param.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="2952" column="5" lean-forward="true" selection-start-line="2952" selection-start-column="5" selection-end-line="2952" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/scut/seckill/service/SecKillService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1370">
@@ -1234,8 +1264,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="306">
-            <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <first_editor relative-caret-position="326">
+            <caret line="176" column="44" lean-forward="true" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
             <folding />
           </first_editor>
           <second_editor />

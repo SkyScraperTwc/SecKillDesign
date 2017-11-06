@@ -22,6 +22,12 @@ Spring Boot + Mybatis + Redis + RabbitMQ
     3.使用Redis作为原子计数器（watch事务+decr操作），RabbitMQ作为消息队列记录用户抢购行为，MySQL做异步存储。
     上述三个解决方案均使用了JMeter进行压力与性能测试，分析其吞吐量、平均响应时间、错误率等参数，最后得出相应结论。
 
+备注:
+-----------------------------------
+    1.此项目包含了sql文件，包括表单创建和添加数据。
+    2.包含了JMeter配置图片与实验结果图片
+    3.包含了测试数据集：param.txt。第一个参数代表用户ID，第二个参数代表产品ID。
+
 核心代码：
 -----------------------------------
 ### MySQL悲观锁
@@ -174,6 +180,11 @@ Spring Boot + Mybatis + Redis + RabbitMQ
         }
     }
     
+JMeter压测图片:
+-----------------------------------
+![github](https://github.com/SkyScraperTwc/SecKillDesign/blob/master/src/main/resources/jmeter/origin.png "github")
+![github](https://github.com/SkyScraperTwc/SecKillDesign/blob/master/src/main/resources/jmeter/data-config.png "github")
+
 实验结果图片:
 -----------------------------------
 ### MySQL悲观锁
