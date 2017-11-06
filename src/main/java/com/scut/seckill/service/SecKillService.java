@@ -186,6 +186,7 @@ public class SecKillService {
             record =  new Record(null,user,product,SecKillEnum.SUCCESS.getCode(),SecKillEnum.SUCCESS.getMessage(),new Date());
             //添加record到rabbitMQ消息队列
             rabbitMQSender.send(JSON.toJSONString(record));
+            //返回秒杀成功
             return SecKillEnum.SUCCESS;
         }else {
             //重复秒杀

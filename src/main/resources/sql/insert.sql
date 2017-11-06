@@ -1,9 +1,7 @@
-INSERT INTO `product` VALUES ('0', 'iphone',3600,100,current_date());
-INSERT INTO `product` VALUES ('0', 'huawei',2800,100,current_date());
-INSERT INTO `product` VALUES ('0', 'samsung',1500,100,current_date());
-INSERT INTO `product` VALUES ('0', 'xiaomi',900,100,current_date());
-INSERT INTO `product` VALUES ('0', 'oppo',1200,100,current_date());
-INSERT INTO `product` VALUES ('0', 'vivo',2400,100,current_date());
+INSERT INTO `product` VALUES ('0', 'iphone',3600,1000,current_date());
+INSERT INTO `product` VALUES ('0', 'huawei',2800,1000,current_date());
+INSERT INTO `product` VALUES ('0', 'samsung',1500,1000,current_date());
+INSERT INTO `product` VALUES ('0', 'xiaomi',900,1000,current_date());
 
 INSERT INTO `user` VALUES ('0', 'tom_1','13855558888',current_date());
 INSERT INTO `user` VALUES ('0', 'tom_2','13855558888',current_date());

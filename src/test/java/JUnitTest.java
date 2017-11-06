@@ -46,17 +46,22 @@ public class JUnitTest {
     }
 
     @Test
-    public void test3() throws InterruptedException {
-        String[] array = {"1","2","3","4"};
+    public void test3() throws InterruptedException, IOException {
+        String[] array = {"1","2","3","4","5","6"};
+        File file =new File("/usr/twc/gitProject/SecKillDesign/src/main/resources/jmeter/789.txt");
+        FileWriter fileWritter = new FileWriter(file);
+        BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
         Random random = new Random();
-        for (int i = 1; i <= 1000; i++) {
+        for (int i = 8483; i <= 10000; i++) {
             StringBuffer buffer = new StringBuffer("");
             buffer.append(i+",");
-            int max=4;
+            int max=6;
             int min=0;
             int s = random.nextInt(max)%(max-min+1) + min;
             buffer.append(array[s]);
-            System.out.println(buffer.toString());
+                System.out.println(buffer.toString());
+//            bufferWritter.write(buffer.toString());
+//            bufferWritter.newLine();//换行
         }
     }
 
@@ -66,7 +71,7 @@ public class JUnitTest {
         File file =new File("/usr/twc/gitProject/SecKillDesign/src/main/resources/sql/insert.sql");
         FileWriter fileWritter = new FileWriter(file);
         BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
-        for (int i=1;i<=3000;i++){
+        for (int i=1001;i<=10000;i++){
             StringBuffer buffer = new StringBuffer("INSERT INTO `user` VALUES ('0', ");
             buffer.append("'"+"tom_"+i+"'"+",");
             buffer.append("'13855558888'"+",");

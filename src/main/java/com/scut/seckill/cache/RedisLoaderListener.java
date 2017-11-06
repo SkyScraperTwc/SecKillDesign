@@ -1,10 +1,6 @@
 package com.scut.seckill.cache;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.TypeReference;
-import com.scut.seckill.constant.RedisCacheConst;
 import com.scut.seckill.entity.Product;
-import com.scut.seckill.entity.User;
 import com.scut.seckill.mapper.SecKillMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +9,6 @@ import redis.clients.jedis.Jedis;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
-import java.util.Map;
 
 @Slf4j
 @Component

@@ -12,14 +12,4 @@ public final class RedisCacheConst {
 
     public final static String XIAOMI_HAS_BOUGHT_SET = "xiaomi_has_bought_set";
 
-    /**
-     * 物品库存集合
-     */
-    public final static String IPHONE_STOCK = "iphone_stock";
-
-    public final static String HUAWEI_STOCK = "huawei_stock";
-
-    public final static String SAMSUNG_STOCK = "samsung_stock";
-
-    public final static String XIAOMI_STOCK = "xiaomi_stock";
 }
