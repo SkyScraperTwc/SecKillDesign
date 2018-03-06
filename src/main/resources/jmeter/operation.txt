@@ -3,5 +3,15 @@
 	"body":{
 		"userId":${userId},
 		"productId":${productId}
-		}
-	}
+    }
+}
+
+这是本人此项目的github地址：https://github.com/SkyScraperTwc/SecKillDesign，希望各位能点Star,也欢迎Pull Request!
+项目提供了SQL文件和JMeter压测参数等文件，代码也都有详细的注释！
+我的项目提供了三种解决方案来实现秒杀系统：
+1.利用MySQL实现悲观锁。
+2.利用MySQL实现乐观锁。
+3.使用Redis作为原子计数器（watch事务+decr操作），RabbitMQ作为消息队列记录用户抢购行为，MySQL做异步存储。
+最后使用JMeter进行性能测试，分析其吞吐量、平均响应时间、错误率等参数，得出相应结论。
+
+

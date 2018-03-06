@@ -3,6 +3,7 @@ package com.scut.seckill.utils;
 import com.scut.seckill.constant.RedisCacheConst;
 
 public class SecKillUtils {
+
     /**
      * 获取用户已买队列key
      * @param productName

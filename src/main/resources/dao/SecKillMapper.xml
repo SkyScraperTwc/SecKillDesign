@@ -19,6 +19,10 @@
 		update product set stock=stock-1 where id=#{id}
 	</update>
 
+	<select id="getUserById" resultType="User">
+		select * from user WHERE id=#{id}
+	</select>
+
 	<select id="getAllUser" resultType="User">
 		select * from user
 	</select>

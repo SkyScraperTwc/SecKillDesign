@@ -67,9 +67,18 @@ public class SecKillController {
         return responseMessage;
     }
 
-    @RequestMapping(value = "/test",method = RequestMethod.POST)
-    public String test(@RequestBody Message<SecKillRequest> requestMessage){
-        System.out.println(requestMessage.getBody().getUserId()+","+requestMessage.getBody().getProductId());
-        return "success";
+    /**
+     * 利用AtomicInteger的CAS机制特性
+     * @param requestMessage
+     * @return
+     */
+    @RequestMapping(value = "/baseOnAtomicInteger",method = RequestMethod.POST)
+    public  Message<SecKillResponse> baseOnAtomicInteger(@RequestBody Message<SecKillRequest> requestMessage){
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("userId",requestMessage.getBody().getUserId());
+        paramMap.put("productId",requestMessage.getBody().getProductId());
+        SecKillEnum secKillEnum = secKillService.handleByAtomicInteger(paramMap);
+        Message<SecKillResponse> responseMessage = new Message<>(secKillEnum,null);
+        return responseMessage;
     }
 }

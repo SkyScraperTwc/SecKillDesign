@@ -12,6 +12,8 @@ public interface SecKillMapper{
 
     List<User> getAllUser();
 
+    User getUserById(Integer id);
+
     List<Product> getAllProduct();
 
     Product getProductById(Integer id);

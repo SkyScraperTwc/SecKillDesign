@@ -25,6 +25,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -109,9 +110,23 @@ public class JUnitTest {
 
 
     @Test
-    public void test5() throws InterruptedException {
-        User user = new User(1);
-        String json = JSON.toJSONString(user);
-        System.out.println(json);
+    public void redisSetTest() throws InterruptedException {
+        Jedis jedis = redisCacheHandle.getJedis();
+
+        long l = jedis.sadd("myset", "123");
+        System.out.println(l);
+        long l2 = jedis.sadd("myset", "123");
+        System.out.println(l2);
+
+        boolean flag = jedis.sismember("myset","123");
+        System.out.println(flag);
+    }
+
+    @Test
+    public void userTest() throws InterruptedException {
+        User user = secKillMapper.getUserById(1);
+        System.out.println(user);
+
+        AtomicInteger atomicInteger = new AtomicInteger();
     }
 }
