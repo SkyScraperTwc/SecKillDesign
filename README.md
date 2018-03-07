@@ -29,7 +29,7 @@ Spring Boot + Mybatis + Redis + RabbitMQ
     四种方案的响应错误率均为零，但是吞吐量不一样，
     总体来说第一种和第四种方案的吞吐量相当，平均响应时间也较快；
     第三种方案的吞吐量慢于上述两种，CAS机制效果不错。
-    第二种方案的响应时间最慢，原因是高并发情形下多个线程不断回滚，耗费了大量的CPU资源，导致性能底下。
+    第二种方案的响应时间最慢，原因是高并发情形下多个线程不断回滚，耗费了大量的CPU资源，导致性能低下。
    
     
 备注:
@@ -262,6 +262,7 @@ JMeter压测图片:
 ![github](https://github.com/SkyScraperTwc/SecKillDesign/blob/master/src/main/resources/stress_test_result/posiLockInRedis/result_1.png "github")
 ![github](https://github.com/SkyScraperTwc/SecKillDesign/blob/master/src/main/resources/stress_test_result/posiLockInRedis/result_2.png "github")
 ![github](https://github.com/SkyScraperTwc/SecKillDesign/blob/master/src/main/resources/stress_test_result/posiLockInRedis/result_3.png "github")
+#####################################################################
 
 ### AtomicInteger的CAS机制
 ![github](https://github.com/SkyScraperTwc/SecKillDesign/blob/master/src/main/resources/stress_test_result/atomicInteger/result_1.png "github")
