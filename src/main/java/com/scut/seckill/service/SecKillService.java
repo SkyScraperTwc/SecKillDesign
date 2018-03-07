@@ -93,7 +93,7 @@ public class SecKillService {
     @Transactional
     public SecKillEnum handleByPosiLockInMySQL(Map<String, Object> paramMap){
         Jedis jedis = redisCacheHandle.getJedis();
-        Record record;
+        Record record = null;
 
         Integer userId = (Integer) paramMap.get("userId");
         Integer productId = (Integer)paramMap.get("productId");
@@ -123,7 +123,6 @@ public class SecKillService {
 
         long addResult = jedis.sadd(hasBoughtSetKey,user.getId().toString());
         if (addResult > 0){
-            record = new Record(null,user,product,SecKillEnum.SUCCESS.getCode(),SecKillEnum.SUCCESS.getMessage(),new Date());
             log.info(record.toString());
             boolean insertFlag = secKillMapper.insertRecord(record);
             if (insertFlag){
